@@ -139,11 +139,7 @@ body {
 .main1 {
   padding: 20px;
   grid-area: main1;
-  background-image: linear-gradient(
-    to top left,
-    rgb(5, 18, 41),
-    rgb(125, 126, 134)
-  );
+  background-color: rgb(88, 86, 86);
 }
 
 .main1 h1 {
@@ -153,6 +149,17 @@ body {
   font-size: 1.8rem;
   justify-content: center;
   font-weight: 900;
+}
+
+.main1 h3 {
+  color: darkorange;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.main1 p {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .main1 {
@@ -169,6 +176,17 @@ body {
   display: none;
   grid-area: main2;
   background-color: darkorange;
+}
+
+.main2 h3 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.main2 p {
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .projects {
@@ -188,7 +206,7 @@ body {
   background: #e9d2ff;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
-  background-image: url("images/650gr-ribs.png");
+  background-image: url("images/Screenshot\ 2022-06-06\ at\ 23-11-02\ Frontend\ Mentor\ Calculator\ app.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,6 +249,7 @@ body {
   background-color: rgba(252, 249, 249, 0.8);
   background-blend-mode: normal;
   transform: scale(1.03);
+  cursor: pointer;
 }
 
 .project:after {
@@ -289,6 +308,8 @@ body {
   background-color: white;
 }
 
+/*TABLET or LARGE PHONE*/
+
 @media screen and (min-width: 600px) {
   .portfolio-container {
     grid-template-columns: 1fr 1fr;
@@ -325,6 +346,8 @@ body {
     transform: scaleX(1);
   }
 }
+
+/*BIG SCREENS, DESK- AND LAPTOPS*/
 
 @media screen and (min-width: 992px) {
   .portfolio-container {
