@@ -24,6 +24,7 @@ body {
 }
 
 .name h1 {
+  cursor: pointer;
   color: white;
   margin-top: 10px;
   display: flex;
@@ -31,6 +32,11 @@ body {
   justify-content: center;
   margin-bottom: 0px;
   font-weight: 700;
+}
+
+.name h1:hover {
+  -webkit-text-stroke: 1px darkorange;
+  text-shadow: 0 0 32px darkorange;
 }
 
 .name p {
