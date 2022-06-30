@@ -156,7 +156,7 @@ body {
 }
 
 .project-container {
-  border: 0.3rem solid black;
+  border: 0.3px solid black;
   display: flex;
   justify-self: center;
   margin: 0 auto;
@@ -167,11 +167,27 @@ body {
 }
 
 .project-links {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   color: black;
   width: 300px;
+}
+
+.button {
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  text-decoration: none;
+  align-self: center;
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
 }
 
 .main2 {
@@ -233,14 +249,27 @@ body {
     margin: 0 0;
     align-self: flex-end;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     color: black;
     width: 300px;
     margin-right: 50px;
   }
 
-  .check-code {
-    margin-left: 20px;
+  .button {
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+    background-color: darkorange;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: white;
   }
 
   .contact-container {
