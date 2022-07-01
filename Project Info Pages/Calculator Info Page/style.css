@@ -212,12 +212,6 @@ body {
   background-color: white;
 }
 
-.btn1 {
-}
-
-.btn2 {
-}
-
 .main2 {
   padding: 20px;
   grid-area: main2;
@@ -309,7 +303,7 @@ body {
   }
 
   .name a {
-    margin-top: 19px;
+    margin-top: 20px;
     margin-bottom: 0px;
     justify-content: left;
     margin-left: 20px;

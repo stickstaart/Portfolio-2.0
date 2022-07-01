@@ -24,6 +24,10 @@ body {
 }
 
 .name h1 {
+  margin: 0;
+}
+
+.name a {
   cursor: pointer;
   color: white;
   margin-top: 10px;
@@ -32,9 +36,10 @@ body {
   justify-content: center;
   margin-bottom: 0px;
   font-weight: 700;
+  text-decoration: none;
 }
 
-.name h1:hover {
+.name a:hover {
   -webkit-text-stroke: 1px darkorange;
   text-shadow: 0 0 32px darkorange;
 }
@@ -179,7 +184,7 @@ body {
   font-size: 1rem;
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
-  background-color: rgb(255, 0, 0);
+  background-color: darkorange;
   color: black;
   text-decoration: none;
   align-self: center;
@@ -280,8 +285,9 @@ body {
     display: flex;
   }
 
-  .name h1 {
-    margin-top: 0px;
+  .name a {
+    margin-top: 20px;
+    margin-bottom: 0px;
     justify-content: left;
     margin-left: 20px;
     align-self: center;
