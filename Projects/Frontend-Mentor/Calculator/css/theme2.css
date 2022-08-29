@@ -25,6 +25,7 @@
 
 body {
   margin: 0;
+  background-color: hsl(0, 5%, 81%);
 }
 
 .attribution {

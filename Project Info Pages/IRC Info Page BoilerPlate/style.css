@@ -14,7 +14,7 @@ body {
     "name"
     "contact"
     "main1"
-    "projects";
+    "main2";
   grid-gap: 0px;
 }
 
@@ -24,7 +24,11 @@ body {
 }
 
 .name h1 {
-  text-decoration: none;
+  margin: 0;
+}
+
+.name a {
+  cursor: pointer;
   color: white;
   margin-top: 10px;
   display: flex;
@@ -32,6 +36,12 @@ body {
   justify-content: center;
   margin-bottom: 0px;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.name a:hover {
+  -webkit-text-stroke: 1px darkorange;
+  text-shadow: 0 0 32px darkorange;
 }
 
 .name p {
@@ -140,31 +150,9 @@ body {
 .main1 {
   padding: 20px;
   grid-area: main1;
-  background-color: rgb(88, 86, 86);
-}
-
-.main1 h1 {
-  margin-top: 5px;
-  color: white;
-  display: flex;
-  font-size: 1.8rem;
-  justify-content: center;
-  font-weight: 900;
-}
-
-.main1 h3 {
-  color: darkorange;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.main1 p {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-.main1 {
-  color: white;
+  background-color: #fff;
+  margin-top: 50px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
@@ -172,42 +160,19 @@ body {
   font-weight: 300;
 }
 
-.main2 {
-  padding: 20px;
-  display: none;
-  grid-area: main2;
-  background-color: darkorange;
-}
-
-.main2 h3 {
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.main2 p {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-.projects {
-  grid-area: projects;
-  background-color: WHITE;
-}
-.projects-container {
+.project-container {
+  border: 0.3px solid black;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.project {
-  position: relative;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: #d0d0ce;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  flex: 1 1 calc(100% - 10px);
-  margin: 20px;
-  background: #e9d2ff;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
-  background-image: url("images/Screenshot\ 2022-06-06\ at\ 23-11-02\ Frontend\ Mentor\ Calculator\ app.png");
+  background-image: url("../../images/Screenshot\ 2022-08-11\ at\ 12-47-33\ Frontend\ Mentor\ Interactive\ rating\ component.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,84 +181,22 @@ body {
   overflow: hidden;
 }
 
-.project2 {
-  background-image: url("images/Screenshot\ 2022-08-11\ at\ 12-47-33\ Frontend\ Mentor\ Interactive\ rating\ component.png");
-}
-
-.project3 {
-  background-image: url("Beer-App/BeerAppSCRSHT.png");
-}
-
-.project4 {
-  background-image: url("Filmzoeker/FilmZoekerSCRNSHT.png");
-}
-
-.project-content {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  position: absolute;
-  /* width: calc(100% - 10px);
-  height: calc(100% - 10px); */
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  flex: 1;
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-  );
-}
-
-.project:hover {
+.project-container:hover {
   background-color: rgba(252, 249, 249, 0.8);
   background-blend-mode: normal;
   transform: scale(1.03);
   cursor: pointer;
 }
 
-.project:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-.project2,
-.project3,
-.project4 {
-  margin-top: 0px;
-}
-
-.project-title {
-  /* align-self: center;
-  width: max-content; */
-  position: relative;
-  margin-top: auto;
-  margin-bottom: 0.5rem;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.project-title::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  background-color: darkorange;
-  width: 100%;
-}
-
-.project-body {
-  margin-top: 0.1rem;
-  margin-bottom: 1.1rem;
-  font-weight: 300;
-  font-size: 0.9rem;
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: black;
+  width: 300px;
 }
 
 .button {
-  margin-bottom: 1.5rem;
   font-weight: 900;
   font-size: 1rem;
   padding: 0.5em 1.25em;
@@ -309,43 +212,39 @@ body {
   background-color: white;
 }
 
+.main2 {
+  padding: 20px;
+  grid-area: main2;
+  background-color: #fff;
+}
+
+.maintext h1 {
+  margin-top: 5px;
+  color: black;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  font-weight: 900;
+}
+
+.maintext h3 {
+  display: flex;
+  justify-content: center;
+  color: darkorange;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.maintext p {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 /*TABLET or LARGE PHONE*/
 
 @media screen and (min-width: 600px) {
-  .portfolio-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 4fr;
-    grid-template-areas:
-      "name name"
-      "contact contact"
-      "main1 main1"
-      "projects projects";
-  }
-
-  .project {
-    margin: 20px;
-    flex: 1 0 calc(41% - 10px);
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .project3,
-  .project4 {
-    margin-top: 0px;
-  }
-
-  .project2,
-  .project4 {
-    margin-left: 0px;
-  }
-
-  .project-title::after {
-    transform: scaleX(0);
-    transition: transform 500ms ease;
-  }
-
-  .project:hover .project-title::after {
-    transform: scaleX(1);
-  }
 }
 
 /*BIG SCREENS, DESK- AND LAPTOPS*/
@@ -353,11 +252,46 @@ body {
 @media screen and (min-width: 992px) {
   .portfolio-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr auto;
+    grid-template-rows: 1fr 4fr 4fr;
     grid-template-areas:
       "name name name contact"
       "main1 main1 main2 main2"
-      "projects projects projects projects";
+      "main1 main1 main2 main2";
+  }
+
+  .project-container {
+    margin: 0 0;
+    display: flex;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+
+  .project-links {
+    margin: 0 0;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    width: 300px;
+    margin-right: 50px;
+  }
+
+  .button {
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+    background-color: darkorange;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  .button:hover,
+  .button:focus {
+    background-color: white;
   }
 
   .contact-container {
@@ -368,8 +302,9 @@ body {
     display: flex;
   }
 
-  .name h1 {
-    margin-top: 0px;
+  .name a {
+    margin-top: 20px;
+    margin-bottom: 0px;
     justify-content: left;
     margin-left: 20px;
     align-self: center;
@@ -404,41 +339,30 @@ body {
     margin-bottom: 0;
   }
 
-  .main1 {
-  }
-
   .main2 {
-    display: unset;
+    margin-top: 50px;
+    border-left: 0.1rem solid rgb(0, 0, 0, 100%);
+    display: flex;
+    justify-content: left;
   }
 
   .main2 h1 {
     font-weight: 900;
     font-size: 1.8rem;
     margin-top: 5px;
-    display: flex;
+    margin-left: 50px;
     justify-content: left;
   }
 
   .main2 p {
-    display: flex;
-    text-align: left;
     font-size: 0.9rem;
     font-weight: 300;
+    justify-content: left;
+    margin-left: 50px;
   }
 
-  .projects {
-    overflow: hidden;
-  }
-
-  .project {
-    margin: 20px;
-    flex: 1 0 calc(21% - 10px);
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .project2,
-  .project3,
-  .project4 {
-    margin-left: 0px;
+  .main2 h3 {
+    justify-content: left;
+    margin-left: 50px;
   }
 }
