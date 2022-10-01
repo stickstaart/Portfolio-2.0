@@ -140,7 +140,7 @@ body {
 .main1 {
   padding: 20px;
   grid-area: main1;
-  background-color: rgb(88, 86, 86);
+  background-color: rgb(88, 86, 86, 80%);
 }
 
 .main1 h1 {
@@ -221,7 +221,7 @@ body {
 }
 
 .project3 {
-  background-image: url("Beer-App/BeerAppSCRSHT.png");
+  background-image: url("images/Advice_Generator_SCRNSHT_1.png");
 }
 
 .project4 {
@@ -266,11 +266,10 @@ body {
 }
 
 .project-title {
-  /* align-self: center;
-  width: max-content; */
   position: relative;
   margin-top: auto;
   margin-bottom: 0.5rem;
+  padding: 0 10px;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -405,6 +404,12 @@ body {
   }
 
   .main1 {
+    background-image: url("images/Joz_EnProfile.jpg");
+    background-position: 155%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-blend-mode: luminosity;
+    background-color: rgb(211, 211, 211);
   }
 
   .main2 {
