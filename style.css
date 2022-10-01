@@ -392,12 +392,14 @@ body {
   }
 
   .main1 p {
+    color: black;
     text-align: left;
     margin-top: 0;
     margin-bottom: 25px;
   }
 
   .main1 h3 {
+    color: black;
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
